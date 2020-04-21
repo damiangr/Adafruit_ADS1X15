@@ -211,7 +211,9 @@ protected:
   void      startComparator_SingleEnded(uint8_t channel, int16_t highThreshold);
   void      startWindowComparator_SingleEnded(uint8_t channel, int16_t lowThreshold, int16_t highThreshold);
   void      startContinuous_SingleEnded(uint8_t channel);
+  void      startOneShot_SingleEnded(uint8_t channel);
   void      startContinuous_Differential(adsDiffMux_t);
+  void      startOneShot_Differential(adsDiffMux_t);
   int16_t   getLastConversionResults(void);
   void      setGain(adsGain_t gain);
   adsGain_t getGain(void);
@@ -227,6 +229,10 @@ protected:
   void      startContinuous_Differential_0_3(void);
   void      startContinuous_Differential_1_3(void);
   void      startContinuous_Differential_2_3(void);
+  void      startOneShot_Differential_0_1(void);
+  void      startOneShot_Differential_0_3(void);
+  void      startOneShot_Differential_1_3(void);
+  void      startOneShot_Differential_2_3(void);
   void      waitForConversion();
 
  private:
